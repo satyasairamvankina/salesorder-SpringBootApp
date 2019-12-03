@@ -1,6 +1,11 @@
 # Salesorder-SpringBootApp
- Salesorder-SpringBoot-Application
-Created all the crud operations and done with Unit testing and Integartion testing along with swagger UI with Mysql and H2 for Integration testing and
+## Salesorder-SpringBoot-Application
+## Created all the crud operations for Sales Order with Address and Items. 
+Tested using Unit testing and Integartion testing 
+Exposing API's with swagger UI
+H2 Database for Integration testing and running application.
+Database UI can be seen in H2 console 
+http://localhost:8099/h2-console/login.do?jsessionid=b0fb647b94539ddf476da21e390d9cb2
 API's : 
 ```
 http://localhost:8099/api/v1/salesorder/
