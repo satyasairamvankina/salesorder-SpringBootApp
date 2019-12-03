@@ -1,6 +1,6 @@
 # Salesorder-SpringBootApp
 ## Salesorder-SpringBoot-Application
-## Created all the crud operations for Sales Order with Address and Items. 
+### Created all the crud operations for Sales Order with Address and Items. 
 Tested using Unit testing and Integartion testing 
 Exposing API's with swagger UI
 H2 Database for Integration testing and running application.
