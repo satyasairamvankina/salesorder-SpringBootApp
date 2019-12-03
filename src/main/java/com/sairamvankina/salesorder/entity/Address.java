@@ -1,9 +1,6 @@
 package com.sairamvankina.salesorder.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -24,6 +21,7 @@ public class Address {
     private String state;
 
 //    @NotNull(message = "ZipCode cannot be Null")
+    @Column(name = "zip_code")
     private Integer zipCode;
 
     private String country;

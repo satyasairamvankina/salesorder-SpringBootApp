@@ -123,3 +123,7 @@ Response Body for validation error:
     "path": "/api/v1/salesorder"
 }
 ```
+Run the Application: Run both Junit and Integration test before building application
+```
+maven clean install
+```

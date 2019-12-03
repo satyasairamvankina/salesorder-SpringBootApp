@@ -20,6 +20,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.client.HttpClientErrorException;
 
 import javax.validation.ConstraintViolationException;
@@ -87,7 +88,6 @@ public class SalesOrderServiceTest {
         salesOrder.setTotalPrice(34.0);
         salesOrder.setSalesTax(5.04);
         salesOrder.setOrderPrice(45);
-//        salesOrder.setOrderDate(new Date("2019-12-02"));
         salesOrder.setOrderDate(new Date());
         salesOrder.setItems(items);
         salesOrder.setBillingAddress(billingAddress);
@@ -98,6 +98,7 @@ public class SalesOrderServiceTest {
         Mockito.when(salesOrderRepository.findAll()).thenReturn(salesOrderList);
         Mockito.when(salesOrderRepository.findById(salesOrder.getSalesId())).thenReturn(Optional.of(salesOrder));
         Mockito.when(salesOrderRepository.save(salesOrder)).thenReturn(salesOrder);
+
 
     }
     @Test
@@ -137,7 +138,6 @@ public class SalesOrderServiceTest {
     public void updateOrder(){
         SalesOrder salesOrder1 = salesOrderServiceInterfaceImpl.updateOrder(salesOrderList.get(0),salesOrderList.get(0).getSalesId());
         Assert.assertEquals("Updated Sales are equal",salesOrderList.get(0),salesOrder1);
-
     }
 
     @Test(expected = ResourceBadRequestException.class)
@@ -147,9 +147,11 @@ public class SalesOrderServiceTest {
 //        salesOrder1.setSalesTax(345.32);
         SalesOrder salesOrder2 = salesOrderServiceInterfaceImpl.updateOrder(null,87978);
     }
-    @Test
+    @Test(expected = ResourceNotFoundException.class)
     public void deleteOrder(){
-
+        salesOrderServiceInterfaceImpl.deleteOrder(salesOrderList.get(0).getSalesId());
+        salesOrderList = new ArrayList<>();
+        SalesOrder salesOrder1 = salesOrderServiceInterfaceImpl.getOrderById(3456);
     }
 
 

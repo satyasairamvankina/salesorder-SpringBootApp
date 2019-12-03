@@ -161,6 +161,5 @@ public class SalesOrderControllerTest {
         mvc.perform( MockMvcRequestBuilders.delete("/api/v1/salesorder/4"))
                 .andExpect(MockMvcResultMatchers.status().isNoContent());
 
-
     }
 }
