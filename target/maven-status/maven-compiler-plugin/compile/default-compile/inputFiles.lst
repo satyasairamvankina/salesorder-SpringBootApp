@@ -12,5 +12,6 @@
 /Users/sairamvankina/IdeaProjects/salesorder/salesorder-SpringBootApp/src/main/java/com/sairamvankina/salesorder/repository/ItemsRepository.java
 /Users/sairamvankina/IdeaProjects/salesorder/salesorder-SpringBootApp/src/main/java/com/sairamvankina/salesorder/repository/SalesOrderRepository.java
 /Users/sairamvankina/IdeaProjects/salesorder/salesorder-SpringBootApp/src/main/java/com/sairamvankina/salesorder/controller/SalesOrderController.java
+/Users/sairamvankina/IdeaProjects/salesorder/salesorder-SpringBootApp/src/main/java/com/sairamvankina/salesorder/logging/LoggingAspect.java
 /Users/sairamvankina/IdeaProjects/salesorder/salesorder-SpringBootApp/src/main/java/com/sairamvankina/salesorder/SalesorderApplication.java
 /Users/sairamvankina/IdeaProjects/salesorder/salesorder-SpringBootApp/src/main/java/com/sairamvankina/salesorder/exceptions/ExceptionHandlerAll.java

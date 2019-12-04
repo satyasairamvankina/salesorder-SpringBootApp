@@ -12,6 +12,7 @@ com/sairamvankina/salesorder/exceptions/ExceptionHandlerAll.class
 com/sairamvankina/salesorder/entity/Address.class
 com/sairamvankina/salesorder/exceptions/SalesResponse.class
 com/sairamvankina/salesorder/exceptions/ResourceNotFoundException.class
+com/sairamvankina/salesorder/logging/LoggingAspect.class
 com/sairamvankina/salesorder/exceptions/Response.class
 com/sairamvankina/salesorder/exceptions/ResourceBadRequestException.class
 com/sairamvankina/salesorder/entity/SalesOrder$OrderStatus.class

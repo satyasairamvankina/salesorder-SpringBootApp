@@ -42,7 +42,6 @@ public class SalesOrderServiceInterfaceImpl implements SalesOrderService {
 
     @Override
     public SalesOrder createOrder(SalesOrder salesOrder) {
-
         if(salesOrder == null)throw new ResourceBadRequestException("Bad request for creating sales order cannot be null"+salesOrder);
         addressRepository.save(salesOrder.getBillingAddress());
         addressRepository.save(salesOrder.getShippingAddress());
